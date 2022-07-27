@@ -1,0 +1,42 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.header {
+  background-color: bisque;
+  height: 300px;
+  margin: 0 auto;
+}
+.header .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+}
+.header .top-header .social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .top-header .contact-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  margin: auto;
+}
+.header .bottom-header .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.header .bottom-header .nav-links ul {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
