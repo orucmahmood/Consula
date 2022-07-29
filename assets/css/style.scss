@@ -1,0 +1,268 @@
+@import 'mixins';
+@import 'colors';
+@import 'typography';
+@import 'variables';
+
+$boxsize: 1200px;
+
+
+:root {
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 1rem;
+    width: 100%;
+}
+
+
+#header {
+    margin: 0 auto;
+
+    .header_top {
+        width: 100%;
+        background-color: $topheaderbg;
+
+        &_container {
+            color: $primary;
+            @include flex(flex, space-between, center, auto);
+            padding: 10px;
+            margin: 0 auto;
+            width: $boxsize;
+
+            &_icons {
+                @include flex(flex, space-between, center, auto);
+                gap: 20px;
+
+                a {
+                    color: $primary;
+
+                    &:hover {
+                        color: $tophover;
+                    }
+                }
+            }
+
+            &_contact {
+                @include flex(flex, space-between, center, auto);
+                gap: 1rem;
+
+                #content {
+                    @include flex(flex, space-between, center, auto);
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .header_bottom {
+        width: 100%;
+        background-color: $white;
+
+        &_container {
+            @include flex(flex, space-between, center, auto);
+            padding: 1.5rem 0.5rem;
+            margin: 0 auto;
+            width: $boxsize;
+
+            .logo {
+                color: $black;
+                font-weight: 700;
+                font-size: 2rem;
+
+                span {
+                    color: $primary;
+                }
+            }
+
+            .nav_links {
+                @include flex(flex, space-between, center, auto);
+                list-style-type: none;
+
+                &_item {
+                    text-decoration: none;
+                    padding-left: 2rem;
+                    color: $black;
+
+                    &:hover {
+                        color: $primary;
+                        transition: .3s all ease;
+                    }
+                }
+
+                #active_link {
+                    color: $primary;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// Hero Section
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url("/assets/images/hero.webp");
+    background-size: cover;
+
+    &_container {
+        width: $boxsize;
+        margin: 0 auto;
+        padding: 20% 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .article_box {
+            width: 450px;
+            color: $white;
+
+            h1 {
+                font-weight: 700;
+                font-size: 2.7rem;
+                text-decoration: b;
+            }
+
+            p {
+                font-size: 0.9rem;
+                margin-top: 15px;
+            }
+
+            button {
+                @include button;
+            }
+        }
+
+    }
+
+}
+
+// Main Section
+
+.main {
+    width: 100%;
+    height: 100vh;
+
+    .welcome_container {
+        width: $boxsize;
+        margin: 0 auto;
+        @include flex(flex, space-between, center, auto);
+
+        .imagebox {
+            position: relative;
+
+            .image {
+                width: 600px;
+                height: 600px;
+                margin: 100px 0px;
+            }
+
+            .experience {
+                background-color: $blue;
+                position: absolute;
+                right: -15px;
+                bottom: 90px;
+                padding: 25px;
+                text-align: center;
+                color: $white;
+
+                h2 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    margin-top: 5px;
+                    font-size: 1.1rem;
+                    letter-spacing: 0.25rem;
+                }
+            }
+
+
+        }
+
+        .welcome_article {
+            padding-left: 90px;
+
+            @include section_title;
+
+            button {
+                @include button;
+            }
+
+        }
+    }
+
+    .our_team_container {
+        width: $boxsize;
+        margin: 0 auto;
+        padding-top: 50px;
+
+        .our_team_article {
+            text-align: center;
+            @include section_title;
+
+        }
+
+        .team_list {
+            @include flex(flex, space-between, center, auto);
+
+            &_item {
+                @include flex(flex, space-between, center, column);
+                line-height: 1.25rem;
+                text-align: center;
+
+                &_avatar {
+                    width: 150px;
+                    height: 150px;
+                    border: none;
+                    border-radius: 150px;
+                    margin: 2rem 0;
+                }
+
+                #name {
+                    font-size: 1rem;
+                }
+
+                #position {
+                    font-size: 0.8rem;
+                    color: $teal;
+                }
+
+                #about {
+                    padding: 0 50px;
+                    line-height: 1.3rem;
+                }
+
+                .social_accounts {
+                    @include flex(flex, space-between, center, auto);
+                    padding: 5px;
+
+                    &_icons {
+                        margin: 5px 3px;
+                        width: 30px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 20px;
+                        padding: 7px;
+                        background-color: $icons;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

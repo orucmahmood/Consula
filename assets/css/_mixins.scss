@@ -1,0 +1,34 @@
+@mixin flex($flex, $justify, $align, $direction) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin button {
+    background-color: $primary;
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: $white;
+    margin-top: 25px;
+    border: none;
+}
+
+@mixin section_title {
+    
+    #subheader {
+        font-size: 0.8rem;
+        color: $teal;
+    }
+
+    h1 {
+        color: $blue;
+        font-weight: 700;
+        font-size: 2.5rem;
+        padding: 10px 0;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+}

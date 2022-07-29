@@ -6,58 +6,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consula</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/73ef66fbfe.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <section class="header">
+    <!-- Header Section -->
 
-        <div class="top-header">
-            <div class="social-icons">
-                <img src="/images/fb.png" alt="">
-                <img src="/images/twitter.png" alt="">
-                <img src="/images/instagram.png" alt="">
-                <img src="/images/linkedin.png" alt="">
-            </div>
-
-            <div class="contact-details">
-                <div class="phone">
-                    <img src="/images/phone.png" alt="">
-                    <p class="phone">+1 234 5678 9101</p>
+    <header id="header">
+        <div class="header_top">
+            <div class="header_top_container">
+                <div class="header_top_container_icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <div class="email">
-                    <img src="/images/email.png" alt="">
-                    <p class="phone">info@yourdomain.com</p>
+                <div class="header_top_container_contact">
+                    <div id="content"><i class="fa-solid fa-phone"></i> +1 234 5678 9101</div>
+                    <div id="content"><i class="fa-solid fa-envelope"></i> info@yourdomain.com</div>
                 </div>
             </div>
-
         </div>
 
-        <div class="bottom-header">
-            <div class="logo">
-                <h1 class="logo-title">Consula<span>.</span></h2>
+        <div class="header_bottom">
+            <div class="header_bottom_container">
+                <div class="logo">
+                    <p>Consula<span>.</span></p>
+                </div>
+                <nav class="nav_links">
+                    <li><a href="/" id="active_link">Home</a></li>
+                    <li><a href="/" class="nav_links_item">About Us</a></li>
+                    <li><a href="/" class="nav_links_item">Team</a></li>
+                    <li><a href="/" class="nav_links_item">Services</a></li>
+                    <li><a href="/" class="nav_links_item">Testmonials</a></li>
+                    <li><a href="/" class="nav_links_item">Blog</a></li>
+                    <li><a href="/" class="nav_links_item">Contact</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <div class="hero">
+        <div class="hero_container">
+            <div class="article_box">
+                <h1>We Are The Best Consulting Agency</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate
+                    facere deleniti fuga officia.</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+
+    <div class="main">
+        <div class="welcome_container">
+            <div class="imagebox">
+                <img class="image" src="/assets/images/images2.webp" alt="">
+                <div class="experience">
+                    <h2>50 years</h2>
+                    <p>OF EXPERIENCE</p>
+                </div>
+            </div>
+            <div class="welcome_article">
+                <p id="subheader">ABOUT US</p>
+                <h1>Welcome To Consula</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil,
+                    consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci
+                    alias eius vero vel!</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <!-- Our Team Section -->
+
+        <div class="our_team_container">
+            <div class="our_team_article">
+                <p id="subheader">TEAM</p>
+                <h1>Our Team</h1>
             </div>
 
-            <nav class="nav-links">
-                <ul class="nav">
-                    <li>Home</li>
-                    <li>Abous Us</li>
-                    <li>Team</li>
-                    <li>Services</li>
-                    <li>Testmonials</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-
-            </nav>
-
+            <div class="team_list">
+                <div class="team_list_item">
+                    <img class="team_list_item_avatar" src="/assets/images/man1.webp" alt="">
+                    <p id="name">John Rooster</p>
+                    <p id="position">CO-FOUNDER, PRESIDENT</p>
+                    <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
+                        molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio
+                        cupiditate tempore suscipit inventore deserunt tenetur. </p>
+                    <div class="social_accounts">
+                        <img class="social_accounts_icons" src="/assets/images/facebook.svg">
+                        <img class="social_accounts_icons" src="/assets/images/instagram.svg">
+                        <img class="social_accounts_icons" src="/assets/images/twitter.svg">
+                        <img class="social_accounts_icons" src="/assets/images/linkedin.svg">
+                    </div>
+                </div>
+                <div class="team_list_item">
+                    <img class="team_list_item_avatar" src="/assets/images/man1.webp" alt="">
+                    <p id="name">John Rooster</p>
+                    <p id="position">CO-FOUNDER, PRESIDENT</p>
+                    <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
+                        molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio
+                        cupiditate tempore suscipit inventore deserunt tenetur. </p>
+                    <div class="social_accounts">
+                        <img class="social_accounts_icons" src="/assets/images/facebook.svg">
+                        <img class="social_accounts_icons" src="/assets/images/instagram.svg">
+                        <img class="social_accounts_icons" src="/assets/images/twitter.svg">
+                        <img class="social_accounts_icons" src="/assets/images/linkedin.svg">
+                    </div>
+                </div>
+                <div class="team_list_item">
+                    <img class="team_list_item_avatar" src="/assets/images/man1.webp" alt="">
+                    <p id="name">John Rooster</p>
+                    <p id="position">CO-FOUNDER, PRESIDENT</p>
+                    <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
+                        molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio
+                        cupiditate tempore suscipit inventore deserunt tenetur. </p>
+                    <div class="social_accounts">
+                        <img class="social_accounts_icons" src="/assets/images/facebook.svg">
+                        <img class="social_accounts_icons" src="/assets/images/instagram.svg">
+                        <img class="social_accounts_icons" src="/assets/images/twitter.svg">
+                        <img class="social_accounts_icons" src="/assets/images/linkedin.svg">
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </section>
+    </div>
 
 </body>
 
